@@ -7,7 +7,7 @@ const ProductsPage = () => {
   return (
     <div className="min-h-screen bg-white ">
       {/* Hero Section */}
-      <div className="relative h-[800px] mb-16">
+      <div className="relative h-[75vh] mb-16">
         <div className="absolute inset-0">
           <img
             src="https://mcusercontent.com/c379e3356454ef2a14873d293/images/a10a3858-cd30-dc2d-e2b5-1454b2fa39ba.jpg"
@@ -16,7 +16,7 @@ const ProductsPage = () => {
           />
           <div className="absolute inset-0 bg-blue-900/70" />
         </div>
-        <div className="relative h-[800px] flex items-center justify-center text-center px-6 ">
+        <div className="relative h-full flex items-center justify-center text-center px-6">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-sky-400 mb-4 animate-fade-up animation-delay-200 ">
             NUESTROS VALIDADORES
@@ -50,4 +50,3 @@ const ProductsPage = () => {
 };
 
 export default ProductsPage;
-

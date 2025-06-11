@@ -4,16 +4,20 @@ interface ProjectCardProps {
   image: string;
   title: string;
   description: string;
+  onClick: () => void;
 }
 
-const ProjectCard = ({ image, title, description }: ProjectCardProps) => {
+const ProjectCard = ({ image, title, description, onClick }: ProjectCardProps) => {
   return (
-    <div className="bg-white rounded-xl shadow-xl overflow-hidden transition-transform hover:scale-105 hover:bg-blue-100">
-      <div className="h-48 overflow-hidden">
+    <div 
+      className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+      onClick={onClick}
+    >
+      <div className="h-48 overflow-hidden rounded-t-xl">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
         />
       </div>
       <div className="p-6">
